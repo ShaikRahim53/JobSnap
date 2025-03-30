@@ -31,3 +31,14 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### node ###
+node_modules/
+
+.mvn/
+.idea/
+*.log
+*.class
+*.jar
+*.war
+*.iml
