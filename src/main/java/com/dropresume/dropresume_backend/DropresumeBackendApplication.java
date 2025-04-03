@@ -12,7 +12,6 @@ public class DropresumeBackendApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DropresumeBackendApplication.class, args);
 	}
-
 }
 
 @RestController
@@ -21,6 +20,6 @@ class TestController{
 	@GetMapping("/hello")
 	public String sayHello()
 	{
-		return "DropResume Backend is Working!!!";
+		return "DropResume Backend gonna build";
 	}
 }
