@@ -21,21 +21,23 @@ public class JwtUtil {
         return Keys.hmacShaKeyFor(keyBytes);
     }
 
-    public String generateToken(String username) {
+    // ✅ Changed method name from generateToken(String username) to generateToken(String email)
+    public String generateToken(String email) {
         return Jwts.builder()
-                .subject(username)
+                .subject(email) // Using email as subject now
                 .issuedAt(new Date())
                 .expiration(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
-                .signWith(getSigningKey(), Jwts.SIG.HS256) // ✅ FIX: Use Jwts.SIG.HS256
+                .signWith(getSigningKey(), Jwts.SIG.HS256)
                 .compact();
     }
 
-    public String extractUsername(String token) {
+    // ✅ Changed name for clarity
+    public String extractEmail(String token) {
         return extractClaims(token).getSubject();
     }
 
-    public boolean validateToken(String token, String username) {
-        return username.equals(extractUsername(token)) && !isTokenExpired(token);
+    public boolean validateToken(String token, String email) {
+        return email.equals(extractEmail(token)) && !isTokenExpired(token);
     }
 
     private boolean isTokenExpired(String token) {
@@ -44,7 +46,7 @@ public class JwtUtil {
 
     private Claims extractClaims(String token) {
         return Jwts.parser()
-                .verifyWith(getSigningKey()) // ✅ FIX: Uses correct SecretKey
+                .verifyWith(getSigningKey())
                 .build()
                 .parseSignedClaims(token)
                 .getPayload();
