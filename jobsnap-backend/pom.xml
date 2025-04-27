@@ -8,11 +8,11 @@
 		<version>3.5.0-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.dropresume</groupId>
-	<artifactId>dropresume-backend</artifactId>
+	<groupId>com.jobsnap</groupId>
+	<artifactId>jobsnap-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>dropresume-backend</name>
-	<description>Demo project for Spring Boot</description>
+	<name>jobsnap-backend</name>
+	<description>Backend for JobSnap</description>
 	<url/>
 	<licenses>
 		<license/>
