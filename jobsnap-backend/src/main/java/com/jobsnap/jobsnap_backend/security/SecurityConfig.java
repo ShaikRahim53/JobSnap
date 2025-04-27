@@ -1,4 +1,4 @@
-package com.dropresume.dropresume_backend.security;
+package com.jobsnap.dropresume_backend.security;
 
 import java.util.List;
 
@@ -37,7 +37,7 @@ public class SecurityConfig {
             .csrf().disable()
             .cors(Customizer.withDefaults())
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/auth/register", "/api/auth/login").permitAll()
+                .requestMatchers("/api/auth/register", "/api/auth/login","/api/hello").permitAll()
                 .anyRequest().authenticated()
             )
             .sessionManagement(sess -> sess.sessionCreationPolicy(SessionCreationPolicy.STATELESS))

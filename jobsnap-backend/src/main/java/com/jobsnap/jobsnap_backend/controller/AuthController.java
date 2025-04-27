@@ -1,4 +1,4 @@
-package com.dropresume.dropresume_backend.controller;
+package com.jobsnap.jobsnap_backend.controller;
 
 import java.util.Map;
 
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.dropresume.dropresume_backend.models.User;
-import com.dropresume.dropresume_backend.repository.UserRepository;
-import com.dropresume.dropresume_backend.security.JwtUtil;
+import com.jobsnap.jobsnap_backend.models.User;
+import com.jobsnap.jobsnap_backend.repository.UserRepository;
+import com.jobsnap.jobsnap_backend.security.JwtUtil;
 
 @RestController
 @RequestMapping("/api/auth")

@@ -1,10 +1,10 @@
-package com.dropresume.dropresume_backend;
+package com.jobsnap.jobsnap_backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DropresumeBackendApplicationTests {
+class JobSnapBackendApplicationTests {
 
 	@Test
 	void contextLoads() {

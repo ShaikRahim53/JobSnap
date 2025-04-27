@@ -1,7 +1,7 @@
-package com.dropresume.dropresume_backend.controller;
+package com.jobsnap.dropresume_backend.controller;
 
-import com.dropresume.dropresume_backend.models.Resume;
-import com.dropresume.dropresume_backend.repository.ResumeRepository;
+import com.jobsnap.jobsnap_backend.models.Resume;
+import com.jobsnap.jobsnap_backend.repository.ResumeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

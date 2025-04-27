@@ -1,4 +1,5 @@
-package com.dropresume.dropresume_backend.controller;
+package com.jobsnap.dropresume_backend.controller;
+
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

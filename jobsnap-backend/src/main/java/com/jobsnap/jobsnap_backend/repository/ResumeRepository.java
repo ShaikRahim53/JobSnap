@@ -1,11 +1,11 @@
-package com.dropresume.dropresume_backend.repository;
+package com.jobsnap.dropresume_backend.repository;
 
 import java.util.List;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import com.dropresume.dropresume_backend.models.Resume;
+import com.jobsnap.jobsnap_backend.models.Resume;
 
 @Repository
 public interface ResumeRepository extends MongoRepository<Resume, String> {
