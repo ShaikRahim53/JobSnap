@@ -1,4 +1,4 @@
-package com.jobsnap.dropresume_backend;
+package com.jobsnap.jobsnap_backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

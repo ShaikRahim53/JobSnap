@@ -1,4 +1,4 @@
-package com.jobsnap.dropresume_backend.security;
+package com.jobsnap.jobsnap_backend.security;
 
 import java.io.IOException;
 import java.util.ArrayList;

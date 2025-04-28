@@ -1,4 +1,4 @@
-package com.jobsnap.dropresume_backend.models;
+package com.jobsnap.jobsnap_backend.models;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

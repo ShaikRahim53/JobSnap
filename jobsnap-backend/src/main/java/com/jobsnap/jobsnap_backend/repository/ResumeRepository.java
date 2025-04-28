@@ -1,4 +1,4 @@
-package com.jobsnap.dropresume_backend.repository;
+package com.jobsnap.jobsnap_backend.repository;
 
 import java.util.List;
 

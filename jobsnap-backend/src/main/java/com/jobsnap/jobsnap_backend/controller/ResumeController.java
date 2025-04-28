@@ -1,4 +1,4 @@
-package com.jobsnap.dropresume_backend.controller;
+package com.jobsnap.jobsnap_backend.controller;
 
 import com.jobsnap.jobsnap_backend.models.Resume;
 import com.jobsnap.jobsnap_backend.repository.ResumeRepository;

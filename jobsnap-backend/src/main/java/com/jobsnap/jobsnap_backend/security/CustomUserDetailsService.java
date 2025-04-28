@@ -1,4 +1,4 @@
-package com.jobsnap.dropresume_backend.security;
+package com.jobsnap.jobsnap_backend.security;
 
 import java.util.Collections;
 
@@ -9,8 +9,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.jobsnap.dropresume_backend.models.User;
-import com.jobsnap.dropresume_backend.repository.UserRepository;
+import com.jobsnap.jobsnap_backend.models.User;
+import com.jobsnap.jobsnap_backend.repository.UserRepository;
 
 @Primary
 @Service
