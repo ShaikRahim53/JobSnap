@@ -53,11 +53,16 @@ public class AuthController {
     
         User user = userRepository.findByEmail(email);
     
-        if (user != null && passwordEncoder.matches(password, user.getPassword())) {
+        if (user == null) {
+            return ResponseEntity.status(404).body(Map.of("error", "User not registered. Please register first."));
+        }
+    
+        if (passwordEncoder.matches(password, user.getPassword())) {
             String token = jwtUtil.generateToken(email);
             return ResponseEntity.ok(Map.of("token", token));
         } else {
             return ResponseEntity.status(401).body(Map.of("error", "Invalid credentials"));
         }
-    }    
+    }
+    
 }

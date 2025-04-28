@@ -3,8 +3,8 @@ package com.jobsnap.jobsnap_backend.models;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "resumes")  // This maps to the MongoDB collection "resumes"
-public class Resume {
+@Document(collection = "userjobdetails")  // This maps to the MongoDB collection "resumes"
+public class Userjobdetails {
     
     @Id
     private String id;
@@ -15,9 +15,9 @@ public class Resume {
     private String role;
     private String resumeLink;
 
-    public Resume() {}
+    public Userjobdetails() {}
 
-    public Resume(String name, String email, String company, String platform, String role, String resumeLink) {
+    public Userjobdetails(String name, String email, String company, String platform, String role, String resumeLink) {
         this.name = name;
         this.email = email;
         this.company = company;

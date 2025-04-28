@@ -1,7 +1,7 @@
 // background.js
 
 chrome.runtime.onInstalled.addListener(() => {
-  console.log("🧠 DropResume background ready");
+  console.log("🧠 JobSnap background ready");
 });
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {

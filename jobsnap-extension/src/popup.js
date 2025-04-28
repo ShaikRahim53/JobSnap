@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   dashboardBtn.addEventListener("click", () => {
     chrome.tabs.create({
-      url: "https://your-dropresume-frontend.com/dashboard", // <-- change to your actual deployed URL
+      url: "https://your-jobsnap-frontend.com/dashboard", // <-- change to your actual deployed URL
     });
   });
 });

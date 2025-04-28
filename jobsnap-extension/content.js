@@ -44,6 +44,6 @@ chrome.runtime.sendMessage(
     payload: jobData,
   },
   (response) => {
-    console.log("✅ DropResume: Job data sent", response);
+    console.log("✅ JobSnap: Job data sent", response);
   }
 );
