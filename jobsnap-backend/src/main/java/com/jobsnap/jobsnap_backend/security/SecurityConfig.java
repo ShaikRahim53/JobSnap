@@ -37,7 +37,7 @@ public class SecurityConfig {
             .csrf().disable()
             .cors(Customizer.withDefaults())
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/auth/register", "/api/auth/login","/api/hello").permitAll()
+                .requestMatchers("/api/auth/register", "/api/auth/login","/api/hello","api/jobapplications/submit","api/jobapplications/user/{email}").permitAll()
                 .anyRequest().authenticated()
             )
             .sessionManagement(sess -> sess.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
