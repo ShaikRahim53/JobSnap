@@ -25,7 +25,6 @@ const RegisterPage = () => {
     setError("");
 
     try {
-      //console.log("🧾 FormData:", formData);
       await axios.post("http://localhost:8080/api/auth/register", formData);
       alert("✅ Registered successfully! Please login.");
       navigate("/login");
@@ -40,32 +39,43 @@ const RegisterPage = () => {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h2>Register</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          required
-          value={formData.email}
-          onChange={handleChange}
-        />
-        <br />
-        <br />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          required
-          value={formData.password}
-          onChange={handleChange}
-        />
-        <br />
-        <br />
-        <button type="submit">Register</button>
-      </form>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+    <div id="register" style={{ padding: "20px" }}>
+      <div className="flex justify-center items-center min-h-screen bg-gray-100">
+        <div className="bg-white p-8 rounded-xl shadow-md w-full max-w-md">
+          <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
+            Register
+          </h2>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+              value={formData.password}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <button
+              type="submit"
+              className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-200"
+            >
+              Register
+            </button>
+          </form>
+          {error && (
+            <p className="mt-4 text-red-600 text-sm text-center">{error}</p>
+          )}
+        </div>
+      </div>
     </div>
   );
 };

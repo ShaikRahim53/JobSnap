@@ -1,28 +1,14 @@
-// src/App.js
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import RegisterPage from "./pages/RegisterPage";
-import LoginPage from "./pages/LoginPage";
-import Dashboard from "./pages/Dashboard";
-import ProtectedRoute from "./components/ProtectedRoute";
-import Css from "./styles/index.css";
+import Navbar from "./components/Navbar";
+import LandingPage from "./pages/LandingPage";
+import "./styles/index.css"; // your CSS import
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/register" element={<RegisterPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route
-          path="/dashboard"
-          element={
-            <ProtectedRoute>
-              <Dashboard />
-            </ProtectedRoute>
-          }
-        />
-      </Routes>
-    </Router>
+    <>
+      <Navbar />
+      <LandingPage />
+    </>
   );
 }
 
