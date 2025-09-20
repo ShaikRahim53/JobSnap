@@ -2,7 +2,7 @@
 import React from "react";
 import HomePage from "./HomePage";
 import WhatItDoes from "./WhatItDoes";
-import RegisterPage from "./RegisterPage";
+import RegisterPage from "./SignUp";
 import ContactPage from "./ContactPage";
 
 const LandingPage = () => {

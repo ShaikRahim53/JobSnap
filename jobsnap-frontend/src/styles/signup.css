@@ -1,0 +1,43 @@
+#jobsnap-logo {
+  width: 100px;
+  height: auto;
+}
+h1 {
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+.fira-sans-condensed-regular {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  float: right;
+  margin-right: 300px;
+  margin-top: 100px;
+}
+#continue {
+  border: 2px solid #e5e5e5;
+  margin-top: 5px;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 19px 2px whitesmoke;
+  gap: 2%;
+}
+#continue img {
+  width: 20px;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+#login {
+  color: blue;
+}
