@@ -1,6 +1,4 @@
-<img src="jobsnap-frontend/public/images/JobSnap_logo.png" alt="JobSnap Logo" width="200"/> #JobSnap
-
----
+<img src="jobsnap-frontend/public/images/JobSnap_logo.png" alt="JobSnap Logo" width="200"/> # JobSnap
 
 [![React](https://img.shields.io/badge/React-17.0.2-blue?logo=react&logoColor=white)](https://reactjs.org/) 
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3.2-blue?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/) 
