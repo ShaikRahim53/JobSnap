@@ -1,4 +1,4 @@
-# ![JobSnap Logo](/public/jobsnap-frontend/public/images) JobSnap
+# ![JobSnap Logo](/JobSnap_logo.png) JobSnap
 
 [![React](https://img.shields.io/badge/React-17.0.2-blue?logo=react&logoColor=white)](https://reactjs.org/) 
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3.2-blue?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/) 
