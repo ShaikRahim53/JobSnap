@@ -1,5 +1,3 @@
-<img src="jobsnap-frontend/public/images/JobSnap_logo.png" alt="JobSnap Logo" width="50" height="50"/> 
-
 # JobSnap
 
 [![React](https://img.shields.io/badge/React-17.0.2-blue?logo=react&logoColor=white)](https://reactjs.org/) 
