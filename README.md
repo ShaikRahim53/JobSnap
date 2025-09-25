@@ -1,4 +1,4 @@
-# ![JobSnap Log](/images/JobSnap_logo.png) JobSnap
+# ![JobSnap Log](JobSanp-frontend/images/JobSnap_logo.png) JobSnap
 
 [![React](https://img.shields.io/badge/React-17.0.2-blue?logo=react&logoColor=white)](https://reactjs.org/) 
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3.2-blue?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/) 
@@ -42,23 +42,23 @@ cd jobsnap-backend
 mvn spring-boot:run
 ```
 
-# Usage
+## Usage
 - Open the frontend in your browser: http://localhost:3000
 - Register or Login to your account.
 - Track your job applications and view analytics in the dashboard.
 
-# Project Structure
+## Project Structure
 
 **Frontend:** src/pages contains Home, Register, Login, Dashboard, and Contact pages.
 **Backend:** Spring Boot application handles API requests and connects to MongoDB.
 
-# Future Enhancements
+## Future Enhancements
 - AI-based resume tailoring
 - Smart job recommendations
 - Integration with popular job portals
 
-# License
+## License
 - This project does not currently use a license.
 
-#Contact
+## Contact
 - For any queries or collaboration, reach out at rahim.shaik.job@gmail.com
