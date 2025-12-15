@@ -1,5 +1,4 @@
-import SignUp from "./pages/SignUp";
-//import Login from "./pages/Login";
+import Login from "./pages/Login";
 {
   /*import HomePage from "./pages/HomePage";
 import WhatItDoes from "./pages/WhatItDoes";
@@ -27,10 +26,7 @@ function App() {
       </Routes>
     */}
 
-      <SignUp />
-      {/*
       <Login />
-      */}
     </>
   );
 }
